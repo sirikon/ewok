@@ -7,5 +7,5 @@ Furry. Cute. Chaotic yet organized. Basic docker-compose automation.
 ```bash
 # Clone this repository, and then:
 cd app
-npm i && npm link
+npm i -g
 ```
