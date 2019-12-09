@@ -11,6 +11,8 @@ async function main() {
         case 'down': await service.down(serviceName); break;
         case 'update': await service.update(serviceName); break;
         case 'reload': await service.reload(serviceName); break;
+        case 'logs': await service.logs(serviceName); break;
+        case 'logsFollow': await service.logsFollow(serviceName); break;
         default: console.log(`Unknown command ${command}`);
     }
 }

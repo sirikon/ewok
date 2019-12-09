@@ -49,4 +49,6 @@ module.exports = {
     down: async (serviceName) => await runComposeForService(serviceName, ['down']),
     update: async (serviceName) => await ensureRepository(serviceName),
     reload: async (serviceName) => await reload(serviceName),
+    logs: async (serviceName) => await runComposeForService(serviceName, ['logs']),
+    logsFollow: async (serviceName) => await runComposeForService(serviceName, ['logs', '-f'])
 };
