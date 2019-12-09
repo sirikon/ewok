@@ -18,5 +18,5 @@
     "url": "https://github.com/sirikon/ewok/issues"
   },
   "homepage": "https://github.com/sirikon/ewok#readme",
-  "dependencies": {}
+  "devDependencies": {}
 }
