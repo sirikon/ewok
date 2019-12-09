@@ -1,3 +1,4 @@
 {
-    "workingDirectory": "/"
+    "workingDirectory": "/",
+    "reloadSignal": "USR1"
 }

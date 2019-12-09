@@ -19,6 +19,15 @@ async function ensureRepository(serviceName) {
     await git.pull(serviceDirectory);
 }
 
+async function reload(serviceName) {
+    const serviceConfig = await getConfigForService(serviceName);
+    if (!serviceConfig.reloadSignal) {
+        console.log(`Service ${serviceName} has no 'reloadSignal' config defined.`);
+        return;
+    }
+    runComposeForService(serviceName, ['kill', '-s', serviceConfig.reloadSignal]);
+}
+
 async function runComposeForService(serviceName, args) {
     const serviceConfig = await getConfigForService(serviceName);
     await compose(
@@ -38,5 +47,6 @@ const getServiceDirectory = (serviceName) =>
 module.exports = {
     up: async (serviceName) => await runComposeForService(serviceName, ['up', '-d']),
     down: async (serviceName) => await runComposeForService(serviceName, ['down']),
-    update: async (serviceName) => await ensureRepository(serviceName)
+    update: async (serviceName) => await ensureRepository(serviceName),
+    reload: async (serviceName) => await reload(serviceName),
 };
