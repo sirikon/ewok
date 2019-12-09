@@ -1,0 +1,22 @@
+{
+  "name": "ewok",
+  "version": "1.0.0",
+  "description": "Furry. Cute. Organized yet chaotic. Basic docker-compose automation.",
+  "bin": {
+    "ewok": "bin/ewok.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirikon/ewok.git"
+  },
+  "author": "Carlos Fdez. Llamas <hello@sirikon.me>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sirikon/ewok/issues"
+  },
+  "homepage": "https://github.com/sirikon/ewok#readme",
+  "dependencies": {}
+}
