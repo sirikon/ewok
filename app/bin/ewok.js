@@ -9,6 +9,7 @@ async function main() {
     switch(args[1]) {
         case 'up': await service.up(serviceName); break;
         case 'down': await service.down(serviceName); break;
+        case 'update': await service.update(serviceName); break;
         default: console.log(`Unknown command ${command}`);
     }
 }

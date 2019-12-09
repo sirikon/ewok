@@ -9,6 +9,15 @@ function readFileContent(filePath) {
     });
 }
 
+function checkFileOrDirectoryExists(path) {
+    return new Promise((resolve) => {
+        fs.exists(path, (exists) => {
+            resolve(exists);
+        });
+    });
+}
+
 module.exports = {
-    readFileContent
+    readFileContent,
+    checkFileOrDirectoryExists
 }

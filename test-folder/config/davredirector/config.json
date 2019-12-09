@@ -1,0 +1,7 @@
+{
+    "repository": {
+        "url": "https://github.com/sirikon/davredirector.git",
+        "checkout": "master"
+    },
+    "workingDirectory": "/docker"
+}
