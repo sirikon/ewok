@@ -1,0 +1,6 @@
+{
+    "workingDirectory": "/",
+    "env": {
+        "RESPONSE": "This should be the response."
+    }
+}

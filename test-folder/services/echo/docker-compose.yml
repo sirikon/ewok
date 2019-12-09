@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    
+    web:
+        image: example-echo
+        restart: always
+        build:
+            context: .
+        environment:
+            RESPONSE: ${RESPONSE}

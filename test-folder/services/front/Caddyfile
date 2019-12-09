@@ -4,3 +4,7 @@
 0.0.0.0:80/davredirector {
     proxy / davredirector.local
 }
+
+0.0.0.0:80/echo {
+    proxy / echo.local
+}
